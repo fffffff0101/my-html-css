@@ -1,0 +1,88 @@
+/* ALL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-family: Arial, 'Noto Sans KR', sans-serif;
+    color: #373735
+}
+
+.MainImg {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.MainImg > img {
+    width: 140px;
+}
+
+.MainMenu {
+    width: 600px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.MainMenu > nav{
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* main */
+
+.MainBanner{
+    height: calc(100vh - 120px);
+    background-image: url("/img/mainbanner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+}
+
+.main-grid {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.row {
+    display: flex;
+    width: 70%;
+}
+
+.col {
+    width: 33.33%;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.title {
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.sub_grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; /* 주축 방향 정렬*/
+    align-items: center; /* 교차축 방향 정렬 */
+    flex-wrap: wrap;
+}
+
+
+.sub_img {
+    width: 100px;
+    height: 105px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<body>
+    <div class="header">
+        <h1>My Blog</h1>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li class="login1"><a href="">Sigin In</a></li>
+                <li class="login1"><a href="">Sigin Up</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="mid">
+        <section class="login_section">
+            <h2>로그인</h2>
+            <input type="text" placeholder="아이디를 입력해주세요.">
+            <input type="password" placeholder="비밀번호를 입력해주세요.">
+            <button type="button" id="login-btn">로그인</button>
+            <div class="social_area">
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-google"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </section>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>로그인 하시겠습니까?</p>
+                <button type="button" id="next">진행</button>
+            </div>
+        </div>
+        <script>
+            var modal = document.getElementById("myModal");
+            var btn = document.getElementById("login-btn");
+            var span = document.getElementsByClassName("close")[0];
+            var next = document.getElementById("next");
+
+            btn.onclick = function () {
+                modal.style.display = "block";
+            }
+
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+    </div>
+    <!-- <div class="footer">
+        <p>카피 라이팅 쓰기 귀찮아서 이거씀 | 개인정보취급방침</p>
+    </div> -->
+    <iframe src="footer.html" width="100%" frameborder="0"></iframe>
+</body>
+</html>
